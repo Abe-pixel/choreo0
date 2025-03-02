@@ -7,7 +7,7 @@ const NEZHA_SERVER = process.env.NEZHA_SERVER || '';
 const NEZHA_PORT = process.env.NEZHA_PORT || ''; 
 const NEZHA_KEY = process.env.NEZHA_KEY || '';
 const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'choreo.catmeow.us.kg'; 
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiYmJmYTBlNWMyZmU5NWIxMzRhYTkyNTJjNzQzMDY5YTgiLCJ0IjoiZGFlMWYwODctMGJjZS00YjRmLTgzMzEtNDE3MmNhZDI3YjA5IiwicyI6IllqQmlOVE5rWVRFdE16aGlOeTAwTkRZekxXRTVaR010TVRWbU1qSmxOamc1T1ROaiJ9';
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiYmJmYTBlNWMyZmU5NWIxMzRhYTkyNTJjNzQzMDY5YTgiLCJ0IjoiZDA4NWJkNTYtOTJjZi00NjI0LWI4MTktOTQ4MjUzZGMyNDcwIiwicyI6IlltUmtZekZpWTJVdE1ESTBOUzAwWlRjd0xXRTROemt0WVRFMllUZ3hPVFpsTm1KbCJ9';
 const CFIP = process.env.CFIP || 'ip.sb';
 const NAME = process.env.NAME || 'Choreo';
 
