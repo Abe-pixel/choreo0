@@ -6,8 +6,8 @@ const UUID = process.env.UUID || '986e0d08-b275-4dd3-9e75-f3094b36fa2a';
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';     
 const NEZHA_PORT = process.env.NEZHA_PORT || ''; 
 const NEZHA_KEY = process.env.NEZHA_KEY || '';
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'choreo.catmeow.us.kg'; 
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiYmJmYTBlNWMyZmU5NWIxMzRhYTkyNTJjNzQzMDY5YTgiLCJ0IjoiZDA4NWJkNTYtOTJjZi00NjI0LWI4MTktOTQ4MjUzZGMyNDcwIiwicyI6IlltUmtZekZpWTJVdE1ESTBOUzAwWlRjd0xXRTROemt0WVRFMllUZ3hPVFpsTm1KbCJ9';
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'choreo.akebono.us.kg'; 
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiYmJmYTBlNWMyZmU5NWIxMzRhYTkyNTJjNzQzMDY5YTgiLCJ0IjoiYTE2M2FjY2EtNzdjNS00MjQ5LTgxYzEtNDQ3NDRhNzRjZDYxIiwicyI6IlpqSmlOamRqTkRJdFlqTTROaTAwTVdGakxXRTFNelV0TW1GaU5XVXhOalV4TXpNMSJ9';
 const CFIP = process.env.CFIP || 'ip.sb';
 const NAME = process.env.NAME || 'Choreo';
 
