@@ -6,9 +6,9 @@ const UUID = process.env.UUID || '986e0d08-b275-4dd3-9e75-f3094b36fa2a';
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';     
 const NEZHA_PORT = process.env.NEZHA_PORT || ''; 
 const NEZHA_KEY = process.env.NEZHA_KEY || '';
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'choreo.akebono.us.kg'; 
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiYmJmYTBlNWMyZmU5NWIxMzRhYTkyNTJjNzQzMDY5YTgiLCJ0IjoiYTE2M2FjY2EtNzdjNS00MjQ5LTgxYzEtNDQ3NDRhNzRjZDYxIiwicyI6IlpqSmlOamRqTkRJdFlqTTROaTAwTVdGakxXRTFNelV0TW1GaU5XVXhOalV4TXpNMSJ9';
-const CFIP = process.env.CFIP || 'ip.sb';
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'chore0.tytrsc.cc.ua'; 
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNGFhMzRjNmJiMmVmMjc0NmYwNzAwMTk4N2E4ZWFjMTYiLCJ0IjoiYzNjYmUxYTAtNzQ2My00NjVlLTkxNDEtZDJkOWViZTI1Y2Q2IiwicyI6Ik1USmxaVGM0WmpRdFpUQTNOeTAwTlRJNUxUZzFaVGN0TTJaa01UY3lZemd4TUdaaSJ9';
+const CFIP = process.env.CFIP || 'ssk.moe';
 const NAME = process.env.NAME || 'Choreo';
 
 // root route
@@ -24,10 +24,10 @@ const ISP = metaInfo.trim();
 
 // sub subscription
 app.get('/sub', (req, res) => {
-  const VMESS = { v: '2', ps: `${NAME}-${ISP}`, add: CFIP, port: '443', id: UUID, aid: '0', scy: 'none', net: 'ws', type: 'none', host: ARGO_DOMAIN, path: '/vmess-argo?ed=2048', tls: 'tls', sni: ARGO_DOMAIN, alpn: '' };
-  const vlessURL = `vless://${UUID}@${CFIP}:443?encryption=none&security=tls&sni=${ARGO_DOMAIN}&type=ws&host=${ARGO_DOMAIN}&path=%2Fvless-argo%3Fed%3D2048#${NAME}-${ISP}`;
+  const VMESS = { v: '2', ps: `${NAME}-${ISP}`, add: CFIP, port: '443', id: UUID, aid: '0', scy: 'none', net: 'ws', type: 'none', host: ARGO_DOMAIN, path: '/vmess?ed=2048', tls: 'tls', sni: ARGO_DOMAIN, alpn: '' };
+  const vlessURL = `vless://${UUID}@${CFIP}:443?encryption=none&security=tls&sni=${ARGO_DOMAIN}&type=ws&host=${ARGO_DOMAIN}&path=%2Fvless%3Fed%3D2048#${NAME}-${ISP}`;
   const vmessURL = `vmess://${Buffer.from(JSON.stringify(VMESS)).toString('base64')}`;
-  const trojanURL = `trojan://${UUID}@${CFIP}:443?security=tls&sni=${ARGO_DOMAIN}&type=ws&host=${ARGO_DOMAIN}&path=%2Ftrojan-argo%3Fed%3D2048#${NAME}-${ISP}`;
+  const trojanURL = `trojan://${UUID}@${CFIP}:443?security=tls&sni=${ARGO_DOMAIN}&type=ws&host=${ARGO_DOMAIN}&path=%2Ftrojan%3Fed%3D2048#${NAME}-${ISP}`;
   
   const base64Content = Buffer.from(`${vlessURL}\n\n${vmessURL}\n\n${trojanURL}`).toString('base64');
 
